@@ -1,5 +1,5 @@
 // Javascript to flip HTML5 video vertically
-// Updated 12/31/15, 6/5/16, Chris Michael from amacfie version
+// Updated 6/19/16, Chris Michael
 // Toggle:
 (function()
 {
