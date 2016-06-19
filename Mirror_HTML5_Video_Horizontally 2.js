@@ -17,4 +17,6 @@
       transform:         scale(-1, 1) !important;\
       filter: FlipH !important;\
     }";
+    
+   addStyleString(cssText);
 })();
