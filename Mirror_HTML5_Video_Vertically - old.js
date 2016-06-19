@@ -1,5 +1,5 @@
 // Javascript to flip HTML5 video vertically
-// Update 06/19/16 Chris Michael
+// Updated 12/31/15, 6/5/16, Chris Michael from amacfie version
 // Toggle:
 (function()
 {
@@ -16,7 +16,7 @@
       -webkit-transform: scale( 1,-1) !important;\
       -o-transform:      scale( 1,-1) !important;\
       transform:         scale( 1,-1) !important;\
-      filter: FlipH !important;\
+      filter: FlipV !important;\
     }";
 
   addStyleString(cssText);
@@ -28,10 +28,10 @@
     var video;
     for(var i = 0; i < numberOfVideos; ++i)
     {
-        if(document.getElementsByTagName("video")[i].videoHeight > 100)
+      if(document.getElementsByTagName("video")[i].videoHeight >100)
       {
-          video = document.getElementsByTagName("video")[i];
-          video.classList.toggle('xflip');
+        video = document.getElementsByTagName("video")[i];
+        video.classList.toggle('xflip');
         break;
       }
     }
