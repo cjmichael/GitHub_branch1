@@ -19,4 +19,17 @@
     }";
     
    addStyleString(cssText);
+     if(numberOfVideos >= 1)
+  {
+    var video;
+    for(var i = 0; i < numberOfVideos; ++i)
+    {
+        if(document.getElementsByTagName("video")[i].videoHeight > 100)
+      {
+          video = document.getElementsByTagName("video")[i];
+          video.classList.toggle('xflip');
+        break;
+      }
+    }
+  };
 })();
