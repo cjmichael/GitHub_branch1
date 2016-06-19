@@ -9,7 +9,8 @@
   {
     node.innerHTML = str;
   }
-    cssText =
+
+  cssText =
      ".xflip { \
       -moz-transform:    scale(-1, 1) !important;\
       -webkit-transform: scale(-1, 1) !important;\
@@ -17,9 +18,12 @@
       transform:         scale(-1, 1) !important;\
       filter: FlipH !important;\
     }";
-    
-   addStyleString(cssText);
-     if(numberOfVideos >= 1)
+
+  addStyleString(cssText);
+
+  var numberOfVideos = document.getElementsByTagName("video").length;
+
+  if(numberOfVideos >= 1)
   {
     var video;
     for(var i = 0; i < numberOfVideos; ++i)
